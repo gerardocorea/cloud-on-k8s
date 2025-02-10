@@ -159,6 +159,8 @@ softMultiTenancy:
 # kubeAPIServerIP is required when softMultiTenancy is enabled.
 kubeAPIServerIP: null
 
+kubeAPIPort: 443
+
 telemetry:
   # disabled determines whether the operator periodically updates ECK telemetry data for Kibana to consume.
   disabled: false

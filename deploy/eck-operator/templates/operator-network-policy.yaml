@@ -21,7 +21,7 @@ spec:
       to: []
     # API server
     - ports:
-        - port: 443
+        - port: "{{ .Values.kubeAPIPort }}"
       to:
         - ipBlock:
             cidr: "{{ $kubeAPIServerIP }}/32"
